@@ -3,7 +3,7 @@ const navbarLinks = [
     id: 1,
     name: "Home",
     title: "Inicio",
-    url: "/home"
+    url: "/"
   },
   {
     id: 2,
@@ -15,13 +15,7 @@ const navbarLinks = [
     id: 3,
     name: "courses",
     title: "Cursos",
-    url: "/courses"
-  },
-  {
-    id: 4,
-    name: "contact",
-    title: "Contacto",
-    url: "/contact"
+    url: "/cursos"
   }
 ];
 

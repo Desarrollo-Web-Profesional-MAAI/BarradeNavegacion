@@ -1,5 +1,6 @@
 import { navbarLinks } from "../data/data";
 import { AnimatePresence, motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 const MenuResponsivo = ({ open }) => {
   const animacion = {
@@ -27,7 +28,7 @@ const MenuResponsivo = ({ open }) => {
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="cursor-pointer"
                 >
-                  <a href={item.url}>{item.title}</a>
+                  <Link to={item.url}>{item.title}</Link>
                 </motion.li>
               ))}
             </ul>

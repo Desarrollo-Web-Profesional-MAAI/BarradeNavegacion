@@ -6,6 +6,7 @@ import { MdMenu } from "react-icons/md";
 import { PiShoppingCartLight } from "react-icons/pi";
 import MenuResponsivo from "./MenuResponsivo";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [abierto, setAbierto] = useState(false);
@@ -38,12 +39,12 @@ const Navbar = () => {
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <a
-                    href={item.url}
+                  <Link
+                    to={item.url}
                     className="inline-block py-1 px-3 hover:text-primary transition-colors duration-300"
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
