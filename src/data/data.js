@@ -28,12 +28,6 @@ const navbarLinks = [
     name: "testimonials",
     title: "Testimonios",
     url: "/testimonios"
-  },
-  {
-    id: 6,
-    name: "login",
-    title: "Login",
-    url: "/login"
   }
 ];
 

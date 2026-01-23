@@ -66,13 +66,15 @@ const Navbar = () => {
             >
               <PiShoppingCartLight />
             </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="hover:bg-primary font-semibold rounded-md text-white bg-secondary px-4 py-2 duration-300 border-primary hidden md:block"
-            >
-              Ingresar
-            </motion.button>
+            <Link to="/login">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="hover:bg-primary font-semibold rounded-md text-white bg-secondary px-4 py-2 duration-300 border-primary hidden md:block"
+              >
+                Ingresar
+              </motion.button>
+            </Link>
           </div>
 
           {/* Sección móvil */}
